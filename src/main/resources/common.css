@@ -1,0 +1,41 @@
+/** Styles inspirés de diverses sources sur le web pour un minimum de confort visuel */
+HBox, VBox {
+    -fx-padding: 10px;
+}
+
+TitledPane {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+TextArea {
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+#commandsContainer {
+    -fx-padding: 10px;
+}
+
+#classCodePane, #classCode {
+    -fx-max-height: Infinity;
+}
+
+Button {
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-padding: 5px 15px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-opacity: 0.8;
+}

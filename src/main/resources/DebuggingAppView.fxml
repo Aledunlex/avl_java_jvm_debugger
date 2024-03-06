@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx"
+      fx:controller="fil.ui.controllers.DebuggingAppController"
+      spacing="10"
+      prefWidth="1440"
+      prefHeight="900"
+      alignment="center">
+
+    <HBox alignment="CENTER" prefHeight="50">
+        <Button fx:id="themeSwitcher" text="Mode clair" onAction="#switchTheme"/>
+    </HBox>
+
+    <HBox>
+
+        <VBox fx:id="commandsHandling" prefWidth="310">
+            <TitledPane text="Entrez les arguments puis cliquez sur une commande" collapsible="false">
+                <TextArea fx:id="inputArea" prefHeight="30"/>
+            </TitledPane>
+            <TitledPane text="Commandes" collapsible="false">
+                <VBox fx:id="commandsContainer" spacing="10" alignment="BASELINE_CENTER">
+                    <!-- Buttons are programmatically inserted here at runtime -->
+                </VBox>
+            </TitledPane>
+        </VBox>
+
+        <VBox fx:id="codeContainer" spacing="10" HBox.hgrow="ALWAYS">
+            <TitledPane fx:id="classCodePane" text="Code source de la classe débuggée" collapsible="false"
+                        VBox.vgrow="ALWAYS">
+                <TextArea fx:id="classCode" editable="false"/>
+            </TitledPane>
+            <TitledPane text="Code exécuté:" collapsible="false">
+                <TextArea fx:id="currentlyExecuting" editable="false" prefHeight="50"/>
+            </TitledPane>
+            <TitledPane text="Etat du débugger" collapsible="false" HBox.hgrow="ALWAYS">
+                <TextArea fx:id="outputArea" editable="false" wrapText="true"/>
+            </TitledPane>
+        </VBox>
+
+    </HBox>
+</VBox>

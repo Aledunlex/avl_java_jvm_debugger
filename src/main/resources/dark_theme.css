@@ -1,0 +1,67 @@
+/** Styles inspirés de diverses sources sur le web pour un minimum de confort visuel */
+HBox, VBox {
+    -fx-background-color: #2a2a2a;
+}
+
+TitledPane {
+    -fx-background-color: #3a3a3a;
+    -fx-border-color: #4a4a4a;
+    -fx-text-fill: #ddd;
+}
+
+TextArea {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #ddd;
+    -fx-border-color: #4a4a4a;
+    -fx-prompt-text-fill: #666;
+}
+
+#commandsHandling {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #3a3a3a;
+}
+
+#commandsContainer {
+    -fx-background-color: #2a2a2a;
+}
+
+#codeContainer {
+    -fx-background-color: #1a1a1a;
+    -fx-border-color: #2a2a2a;
+}
+
+#classCodePane, #classCode {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #ddd;
+}
+
+#currentlyExecuting {
+    -fx-background-color: #333;
+    -fx-text-fill: #eee;
+}
+
+#outputArea {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #ddd;
+}
+
+.titled-pane > .title {
+    -fx-background-color: #3a3a3a;
+}
+
+.titled-pane > .content {
+    -fx-background-color: #1a1a1a;
+}
+
+TextArea {
+    -fx-control-inner-background: #1a1a1a;
+    -fx-highlight-fill: #555;
+    -fx-highlight-text-fill: #ddd;
+    -fx-text-fill: #ddd;
+}
+
+Button {
+    -fx-background-color: #4a4a4a;
+    -fx-text-fill: #eee;
+    -fx-border-color: #5a5a5a;
+}
